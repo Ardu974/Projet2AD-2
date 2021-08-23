@@ -1,12 +1,13 @@
 package com.example.projet2ad
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 
 import android.widget.Toast
-import android.widget.Toast.makeText
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -60,17 +61,22 @@ class S_inscrire : AppCompatActivity() {
                 ).show()
             }
             else {
-                auth.createUserWithEmailAndPassword(email, password1)
+                auth.createUserWithEmailAndPassword(email,password1)
                     .addOnCompleteListener (this) { task ->
+                        Log.d("Message", task.exception?.message.toString())
+                        Log.d("Message", task.exception?.printStackTrace().toString())
+
                         if (task.isSuccessful){
                             Toast.makeText(
                             baseContext, "Bienvenue à bord !",
                             Toast.LENGTH_SHORT
                         ).show()
+                            val seConnecterIntent = Intent(this,MainActivity::class.java)
+                            startActivity(seConnecterIntent)
                     }
                         else {
                         Toast.makeText(
-                                baseContext, "Ca coince, l'Ami...!",
+                                baseContext, "Ca coince quelque part, l'Ami...!",
                                 Toast.LENGTH_SHORT
                             ).show()
                         }
