@@ -3,135 +3,102 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
 
-    android:id="@+id/FAQ"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:id="@+id/appbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tabs"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            app:tabMode="scrollable">
-
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="FAQ" />
-
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Tab2" />
-
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Tab3" />
-        </com.google.android.material.tabs.TabLayout>
-    </com.google.android.material.appbar.AppBarLayout>
-
-    <androidx.core.widget.NestedScrollView
+    <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-
-        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+        android:background="?android:attr/windowBackground"
+        android:backgroundTint="#65827717"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:background="?android:attr/windowBackground"
             android:backgroundTint="#65827717"
             android:gravity="bottom|center_horizontal"
             android:orientation="vertical"
             tools:context=".MainActivity">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="?android:attr/windowBackground"
-                android:backgroundTint="#65827717"
-                android:gravity="bottom|center_horizontal"
-                android:orientation="vertical"
-                tools:context=".MainActivity">
+        </LinearLayout>
 
-                <ImageView
-                    android:id="@+id/imageView2"
-                    android:layout_width="match_parent"
-                    android:layout_height="328dp"
-                    android:layout_gravity="center|top"
-                    android:baselineAlignBottom="true"
-                    app:srcCompat="@drawable/_4986539_oc_an_indien_ancienne_carte_asie_du_sud_afrique_de_l_est_et_ouest_de_l_australie_cr___par_hendrick" />
+        <EditText
+            android:id="@+id/ETEmaildinscription"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ems="10"
+            android:hint="Entre ton email, Pirate!"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:text="arnaud.dumont@spirun.com"
+            android:textAlignment="center"
+            tools:ignore="SpeakableTextPresentCheck" />
 
-            </LinearLayout>
+        <EditText
+            android:id="@+id/ETMotdepassedinscription"
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Tape ton mot de passe.."
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:text="654321"
+            android:textAlignment="center"
+            tools:ignore="SpeakableTextPresentCheck" />
 
-            <EditText
-                android:id="@+id/ETEmaildinscription"
-                android:layout_width="290dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:ems="10"
-                android:hint="Entre ton email, Pirate!"
-                android:inputType="textEmailAddress"
-                android:minHeight="48dp"
-                android:text="arnaud.dumont@spirun.com"
-                android:textAlignment="center"
-                tools:ignore="SpeakableTextPresentCheck" />
+        <Button
+            android:id="@+id/BTMotdepasseoublie"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#653E1313"
+            android:text="Mot de passe oublié"
+            app:cornerRadius="90dp" />
 
-            <EditText
-                android:id="@+id/ETMotdepassedinscription"
-                android:layout_width="290dp"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:hint="Tape ton mot de passe.."
-                android:inputType="textPassword"
-                android:minHeight="48dp"
-                android:text="654321"
-                android:textAlignment="center"
-                tools:ignore="SpeakableTextPresentCheck" />
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal">
 
             <Button
-                android:id="@+id/BTMotdepasseoublie"
-                android:layout_width="300dp"
+                android:id="@+id/BTSeconnecter"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#653E1313"
-                android:text="Mot de passe oublié"
+                android:layout_margin="10dp"
+                android:backgroundTint="#827717"
+                android:text="Se connecter"
                 app:cornerRadius="90dp" />
 
-            <LinearLayout
-                android:layout_width="300dp"
+            <Button
+                android:id="@+id/BTSinscrire"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:gravity="center_horizontal|center_vertical"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/BTSeconnecter"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:backgroundTint="#827717"
-                    android:text="Se connecter"
-                    app:cornerRadius="90dp" />
-
-                <Button
-                    android:id="@+id/BTSinscrire"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="#827717"
-                    android:gravity="center|center_horizontal"
-                    android:maxWidth="180dp"
-                    android:minWidth="80dp"
-                    android:text="S'inscrire"
-                    app:cornerRadius="90px" />
-
-            </LinearLayout>
+                android:backgroundTint="#827717"
+                android:gravity="center|center_horizontal"
+                android:maxWidth="180dp"
+                android:minWidth="80dp"
+                android:text="S'inscrire"
+                app:cornerRadius="90px" />
 
         </LinearLayout>
-    </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:layout_gravity="center"
+        android:baselineAlignBottom="true"
+        app:layout_anchor="@+id/linearLayout"
+        app:layout_anchorGravity="center"
+        app:srcCompat="@drawable/_4986539_oc_an_indien_ancienne_carte_asie_du_sud_afrique_de_l_est_et_ouest_de_l_australie_cr___par_hendrick" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
