@@ -27,7 +27,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="161dp"
             android:gravity="bottom|center_horizontal"
             android:orientation="vertical"
             tools:context=".MainActivity">
@@ -69,7 +69,7 @@
 
         <LinearLayout
             android:layout_width="300dp"
-            android:layout_height="wrap_content"
+            android:layout_height="62dp"
             android:gravity="center_horizontal|center_vertical"
             android:orientation="horizontal">
 
@@ -92,6 +92,49 @@
                 android:backgroundTint="#827717"
                 android:text="Se connecter"
                 app:cornerRadius="90dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btreglesdujeu"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Règles"
+                android:textColor="#4C460D" />
+
+            <Button
+                android:id="@+id/btfaq"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="57dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="FAQ"
+                android:textColor="#4C460D" />
+
+            <Button
+                android:id="@+id/btmentionslegales"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mentions légales"
+                android:textColor="#4C460D" />
+
+            <Button
+                android:id="@+id/btcontact"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Contact"
+                android:textColor="#4C460D" />
 
         </LinearLayout>
 
