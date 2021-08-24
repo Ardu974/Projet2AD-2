@@ -15,7 +15,7 @@ class ReinitialisationMDP : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_reinitialisation_mdp)
-        setTitle("T'as oublié ton mot de passe, morbleu ?!")
+        setTitle("Morbleu, ton mot de passe ?!")
         auth= Firebase.auth
         val emailreinitialisationMDP = findViewById<TextView>(R.id.ETMaildereinitialisation)
         val boutondereinitialisationMDP = findViewById<Button>(R.id.BTReinitialisation)
@@ -25,7 +25,7 @@ class ReinitialisationMDP : AppCompatActivity() {
             Firebase.auth.sendPasswordResetEmail(emailreinitialisationMDP)
                 .addOnCompleteListener { task ->
                     if (task.isSuccessful){
-                        Toast.makeText(baseContext, "Mail envoyé",
+                        Toast.makeText(baseContext, "Message envoyé, moussaillon!",
                             Toast.LENGTH_SHORT
                         ).show()
                         val boutondereinitialisationMDP = Intent(this,S_inscrire::class.java)

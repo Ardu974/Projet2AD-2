@@ -20,14 +20,14 @@
         <ImageView
             android:id="@+id/imageView2"
             android:layout_width="342dp"
-            android:layout_height="310dp"
+            android:layout_height="352dp"
             android:layout_gravity="center"
             android:baselineAlignBottom="true"
-            app:srcCompat="@drawable/_4986539_oc_an_indien_ancienne_carte_asie_du_sud_afrique_de_l_est_et_ouest_de_l_australie_cr___par_hendrick" />
+            app:srcCompat="@drawable/capture_d_cran_2021_01_16___19_01_01" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="161dp"
+            android:layout_height="131dp"
             android:gravity="bottom|center_horizontal"
             android:orientation="vertical"
             tools:context=".MainActivity">
@@ -59,7 +59,7 @@
 
             <Button
                 android:id="@+id/BTMotdepasseoublie"
-                android:layout_width="300dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#653E1313"
                 android:text="Mot de passe oublié"
@@ -87,7 +87,7 @@
             <Button
                 android:id="@+id/BTSeconnecter"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_margin="10dp"
                 android:backgroundTint="#827717"
                 android:minHeight="48dp"
@@ -98,7 +98,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="75dp"
+            android:layout_height="51dp"
             android:orientation="horizontal">
 
             <Button

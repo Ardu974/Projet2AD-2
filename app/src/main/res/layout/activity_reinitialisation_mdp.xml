@@ -32,7 +32,8 @@
             android:layout_gravity="center"
             android:layout_weight="1"
             android:gravity="center"
-            android:text="Réinitialisez votre mot de passe" />
+            android:text="Réinitialisez votre mot de passe"
+            app:cornerRadius="120px" />
 
     </LinearLayout>
 
