@@ -24,8 +24,7 @@ class MainActivity : AppCompatActivity() {
         val boutonMotdepasseOublie = findViewById<Button>(R.id.BTMotdepasseoublie)
         val Motdepassedeconnexion = findViewById<TextView>(R.id.ETMotdepassedinscription)
         val ETEmaildinscription = findViewById<TextView>(R.id.ETEmaildinscription)
-       // val FAQScrollingActivity = findViewById<TextView>(R.id.FAQ)
-
+setTitle("La Chasse au Trésor de 'Black Widow'")
         auth= Firebase.auth
         //Entrez ensuite les actions attendues des boutons
        boutonSinscrire.setOnClickListener{
