@@ -15,6 +15,7 @@ class ReinitialisationMDP : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_reinitialisation_mdp)
+        setTitle("T'as oublié ton mot de passe, morbleu ?!")
         auth= Firebase.auth
         val emailreinitialisationMDP = findViewById<TextView>(R.id.ETMaildereinitialisation)
         val boutondereinitialisationMDP = findViewById<Button>(R.id.BTReinitialisation)
