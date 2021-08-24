@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         val boutonMotdepasseOublie = findViewById<Button>(R.id.BTMotdepasseoublie)
         val Motdepassedeconnexion = findViewById<TextView>(R.id.ETMotdepassedinscription)
         val ETEmaildinscription = findViewById<TextView>(R.id.ETEmaildinscription)
+        val boutonReglesduJeu = findViewById<Button>(R.id.btreglesdujeu)
 setTitle("La Chasse au Trésor de 'Black Widow'")
         auth= Firebase.auth
         //Entrez ensuite les actions attendues des boutons
@@ -56,6 +57,10 @@ setTitle("La Chasse au Trésor de 'Black Widow'")
             val ReinitialisationMDPIntent = Intent( this, ReinitialisationMDP::class.java)
             startActivity(ReinitialisationMDPIntent)
             }
+        boutonReglesduJeu.setOnClickListener{
+            val reglesdujeuIntent = Intent( this, reglesdujeu::class.java)
+            startActivity(reglesdujeuIntent)
+        }
 
         }
     }
