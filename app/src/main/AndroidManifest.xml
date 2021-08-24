@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Projet2AD">
         <activity
+            android:name=".mentionslegales"
+            android:exported="true" />
+        <activity
             android:name=".reglesdujeu"
             android:exported="true" />
         <activity

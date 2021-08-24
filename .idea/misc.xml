@@ -3,13 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="app/src/main/res/layout/FAQ.xml" value="0.16770833333333332" />
+        <entry key="app/src/main/res/layout/JEU.xml" value="0.10326086956521739" />
         <entry key="app/src/main/res/layout/activity_accueil.xml" value="0.2361111111111111" />
+        <entry key="app/src/main/res/layout/activity_faq.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_faqscrolling.xml" value="0.16770833333333332" />
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1998030224577715" />
+        <entry key="app/src/main/res/layout/activity_mentions.xml" value="0.15070921985815602" />
+        <entry key="app/src/main/res/layout/activity_mentionslegales.xml" value="0.15364583333333334" />
+        <entry key="app/src/main/res/layout/activity_reglesdujeu.xml" value="0.15070921985815602" />
         <entry key="app/src/main/res/layout/activity_reinitialisation_mdp.xml" value="0.15364583333333334" />
         <entry key="app/src/main/res/layout/activity_sinscrire.xml" value="0.25" />
         <entry key="app/src/main/res/layout/content_scrolling.xml" value="0.1" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
       </map>
     </option>
   </component>

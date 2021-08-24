@@ -25,7 +25,9 @@ class MainActivity : AppCompatActivity() {
         val Motdepassedeconnexion = findViewById<TextView>(R.id.ETMotdepassedinscription)
         val ETEmaildinscription = findViewById<TextView>(R.id.ETEmaildinscription)
         val boutonReglesduJeu = findViewById<Button>(R.id.btreglesdujeu)
-setTitle("La Chasse au Trésor de 'Black Widow'")
+        val boutonmentionslegales = findViewById<Button>(R.id.btmentionslegales)
+
+        setTitle("La Chasse au Trésor de 'Black Widow'")
         auth= Firebase.auth
         //Entrez ensuite les actions attendues des boutons
        boutonSinscrire.setOnClickListener{
@@ -60,6 +62,10 @@ setTitle("La Chasse au Trésor de 'Black Widow'")
         boutonReglesduJeu.setOnClickListener{
             val reglesdujeuIntent = Intent( this, reglesdujeu::class.java)
             startActivity(reglesdujeuIntent)
+        }
+        boutonmentionslegales.setOnClickListener{
+            val mentionslegalesIntent = Intent( this, mentionslegales::class.java)
+            startActivity(mentionslegalesIntent)
         }
 
         }
