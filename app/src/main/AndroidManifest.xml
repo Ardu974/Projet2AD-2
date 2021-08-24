@@ -10,18 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Projet2AD">
         <activity
-            android:name=".FAQScrollingActivity"
-            android:exported="true"
-            android:label="@string/title_activity_faqscrolling"
-            android:theme="@style/Theme.Projet2AD.NoActionBar" />
-        <activity
             android:name=".ReinitialisationMDP"
             android:exported="true" />
-        <activity
-            android:name=".ScrollingActivity"
-            android:exported="true"
-            android:label="@string/title_activity_scrolling"
-            android:theme="@style/Theme.Projet2AD.NoActionBar" />
         <activity
             android:name=".Accueil"
             android:exported="true" />

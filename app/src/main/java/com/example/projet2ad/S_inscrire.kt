@@ -29,7 +29,7 @@ class S_inscrire : AppCompatActivity() {
         val Motdepasse1 = findViewById<EditText>(R.id.ETMotdepasse1)
         val Motdepasse2 = findViewById<EditText>(R.id.ETMotdepasse2)
         val Validation_dInscription = findViewById<Button>(R.id.BTValidationInscription)
-
+setTitle("Un nouvel équipage ?")
         //La variable ci-dessous est initialisée, suite à la ligne de code ligne 16
         auth= Firebase.auth
 
