@@ -57,10 +57,6 @@ setTitle("La Chasse au Trésor de 'Black Widow'")
             startActivity(ReinitialisationMDPIntent)
             }
 
-        /*FAQScrollingActivity.setOnClickListener{
-            val FAQScrollingActivity = Intent(this,FAQScrollingActivity::class.java)
-            startActivity(FAQScrollingActivity)
-        }*/
         }
     }
 
